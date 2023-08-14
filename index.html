@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Texvi</title>
+</head>
+<body onload="descargarPDFIdioma();">
+
+
+<script>
+    function descargarPDFIdioma(){
+        //Obtener idioma
+        var idioma = navigator.language || navigator.userLanguage;
+
+        //Descargar de acuerdo al idioma
+        if(idioma === 'es' || idioma === 'es-ES'){
+            //Español
+            window.location.href = 'texvi_es.pdf';
+        }else if(idioma === 'en' || idioma === 'en-EN'){
+            //Ingles
+            window.location.href = 'texvi_en.pdf';
+        }else{
+            //DEFECTO
+            window.location.href = 'texvi_es.pdf';
+        }
+    }
+
+</script>
+
+</body>
+</html>
