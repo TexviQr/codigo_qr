@@ -38,6 +38,13 @@
         //Obtener idioma
         var idioma = navigator.language || navigator.userLanguage;
 
+        let preloader = select('loader');
+    if(preloader){
+        window.addEventListener('load',()=>{
+            preloader.remove();
+        });
+     }  
+        
         //Descargar de acuerdo al idioma
         if(idioma === 'es' || idioma === 'es-ES'){
             //Español
@@ -51,13 +58,6 @@
         }
     }
 
-
-    let preloader = select('loader');
-    if(preloader){
-        window.addEventListener('load',()=>{
-            preloader.remove();
-        });
-     }  
 </script>
 
 <style>
