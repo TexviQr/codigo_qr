@@ -15,16 +15,21 @@
         if(idioma === 'es' || idioma === 'es-ES'){
             //Español
             window.location.href = 'Catálogo Gasa Quirúrgica TEXVI.pdf';
+            document.getElementById('pdf').src = 'Catálogo Gasa Quirúrgica TEXVI.pdf';
         }else if(idioma === 'en' || idioma === 'en-EN'){
             //Ingles
             window.location.href = 'Surgical Gauze Catalog TEXVI.pdf';
+            document.getElementById('pdf').src = 'Surgical Gauze Catalog TEXVI.pdf';
         }else{
             //DEFECTO
             window.location.href = 'Catálogo Gasa Quirúrgica TEXVI.pdf';
+            document.getElementById('pdf').src = 'Catálogo Gasa Quirúrgica TEXVI.pdf';
         }
     }
 
 </script>
 
+<iframe id="pdf" src="" style="width: 100%; top: 0px; bottom: 0px; position: fixed; height: 100%; left: 0px; right: 0px;" frameborder="0">
+    
 </body>
 </html>
